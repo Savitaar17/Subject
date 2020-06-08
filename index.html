@@ -11,8 +11,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body class="container">
-    <div class="w3-sidebar w3-white" style="visibility: hidden;" id="sidebar">
+  <body>
+    <div
+      class="w3-sidebar w3-conatiner w3-white"
+      style="display: none; position: relative;"
+      id="sidebar"
+    >
+      <span
+        class="fa fa-times w3-button w3-topright w3-right"
+        onclick="close_()"
+        style="position: fixed;"
+      ></span>
       <h2 class="w3-padding w3-border-bottom" style="font-weight: bold;">
         Subjects
       </h2>
@@ -50,11 +59,9 @@
       </div>
     </div>
     <div class="w3-bar">
-      <div
-        class="fa fa-bars w3-bar-item w3-button w3-left"
-        onclick="open()"
-        id="bars"
-      ></div>
+      <div class="w3-bar-item w3-button w3-left" id="bars" onclick="open_()">
+        <span class="fa fa-bars"></span>
+      </div>
       <a href="#"
         ><div class="w3-bar-item w3-button menu-cont">
           <i class="fa fa-home"></i> HOME
@@ -90,8 +97,11 @@
       </div>
     </div>
     <script>
-      function open() {
-        document.getElementById("sidebar").style.visibility = "visible";
+      function open_() {
+        document.getElementById("sidebar").style.display = "block";
+      }
+      function close_() {
+        document.getElementById("sidebar").style.display = "none";
       }
     </script>
   </body>
