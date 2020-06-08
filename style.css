@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(2, 180, 180);
+}
+.menu-cont {
+  margin: 0 20px;
+}
+.btn:hover {
+  text-decoration: underline;
+}
+#sidebar .year {
+  font-weight: bold;
+}
+#bars {
+  margin-right: 25%;
+  padding: 12px;
+}

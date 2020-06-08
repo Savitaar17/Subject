@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Sunjectnew/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="container">
+    <div class="w3-sidebar w3-white" style="visibility: hidden;" id="sidebar">
+      <h2 class="w3-padding w3-border-bottom" style="font-weight: bold;">
+        Subjects
+      </h2>
+      <div class="w3-bar-block">
+        <span class="w3-bar-item year">First Year</span>
+        <a href="#" class="w3-bar-item w3-button btn">ESC101</a>
+        <a href="#" class="w3-bar-item w3-button btn">MTH101</a>
+        <a href="#" class="w3-bar-item w3-button btn">PHY103</a>
+        <a href="#" class="w3-bar-item w3-button btn">MTH102</a>
+        <a href="#" class="w3-bar-item w3-button btn">OTHERS</a>
+      </div>
+      <div class="w3-bar-block">
+        <span class="w3-bar-item year">Second Year</span>
+        <a href="#" class="w3-bar-item w3-button btn">ESC101</a>
+        <a href="#" class="w3-bar-item w3-button btn">MTH101</a>
+        <a href="#" class="w3-bar-item w3-button btn">PHY103</a>
+        <a href="#" class="w3-bar-item w3-button btn">MTH102</a>
+        <a href="#" class="w3-bar-item w3-button btn">OTHERS</a>
+      </div>
+      <div class="w3-bar-block">
+        <span class="w3-bar-item year">Third Year</span>
+        <a href="#" class="w3-bar-item w3-button btn">ESC101</a>
+        <a href="#" class="w3-bar-item w3-button btn">MTH101</a>
+        <a href="#" class="w3-bar-item w3-button btn">PHY103</a>
+        <a href="#" class="w3-bar-item w3-button btn">MTH102</a>
+        <a href="#" class="w3-bar-item w3-button btn">OTHERS</a>
+      </div>
+      <div class="w3-bar-block">
+        <span class="w3-bar-item year">Fourth Year</span>
+        <a href="#" class="w3-bar-item w3-button btn">ESC101</a>
+        <a href="#" class="w3-bar-item w3-button btn">MTH101</a>
+        <a href="#" class="w3-bar-item w3-button btn">PHY103</a>
+        <a href="#" class="w3-bar-item w3-button btn">MTH102</a>
+        <a href="#" class="w3-bar-item w3-button btn">OTHERS</a>
+      </div>
+    </div>
+    <div class="w3-bar">
+      <div
+        class="fa fa-bars w3-bar-item w3-button w3-left"
+        onclick="open()"
+        id="bars"
+      ></div>
+      <a href="#"
+        ><div class="w3-bar-item w3-button menu-cont">
+          <i class="fa fa-home"></i> HOME
+        </div></a
+      >
+      <div class="w3-bar-item w3-button w3-dropdown-hover menu-cont">
+        <i class="fa fa-calendar"></i> YEAR <i class="fa fa-caret-down"></i>
+        <div
+          class="w3-dropdown-content w3-bar-block"
+          style="transform: translateY(8px);"
+        >
+          <a href="#" class="w3-bar-item w3-button btn"><i>2019</i></a>
+          <a href="#" class="w3-bar-item w3-button btn"><i>2018</i></a>
+          <a href="#" class="w3-bar-item w3-button btn"><i>2017</i></a>
+          <a href="#" class="w3-bar-item w3-button btn"><i>2016</i></a>
+          <a href="#" class="w3-bar-item w3-button btn"><i>2015</i></a>
+          <a href="#" class="w3-bar-item w3-button btn"><i>Other</i></a>
+        </div>
+      </div>
+      <div class="w3-bar-item w3-button w3-dropdown-hover menu-cont">
+        <i class="fa fa-external-link"></i> Other Links
+        <i class="fa fa-caret-down"></i>
+        <div
+          class="w3-dropdown-content w3-bar-block"
+          style="transform: translateY(8px);"
+        >
+          <a href="#" class="w3-bar-item w3-button btn"><i>Link 1</i></a>
+          <a href="#" class="w3-bar-item w3-button btn"><i>Link 2</i></a>
+          <a href="#" class="w3-bar-item w3-button btn"><i>Link 3</i></a>
+          <a href="#" class="w3-bar-item w3-button btn"><i>Link 4</i></a>
+          <a href="#" class="w3-bar-item w3-button btn"><i>Link 5</i></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      function open() {
+        document.getElementById("sidebar").style.visibility = "visible";
+      }
+    </script>
+  </body>
+</html>
