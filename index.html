@@ -4,53 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/Sunjectnew/style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/Sunjectnew/index.js"></script>
+    <script>
+      $(document).ready(function () {
+        // var x = document.getElementById("sidebar,bars");
+        // if (
+        //   window.getComputedStyle(x).display === "block" ||
+        //   window.getComputedStyle(x).visibility === "visible"
+        // ) {
+        //   $("body")
+        //     .not("#sidebar,#bars")
+        //     .click(function () {
+        //       $("#sidebar").hide();
+        //     });
+        // }
+      });
+    </script>
   </head>
   <body>
     <div
-      class="w3-sidebar w3-conatiner w3-white"
+      class="w3-sidebar w3-white w3-animate-opacity"
       style="display: none; position: relative;"
       id="sidebar"
     >
       <span
-        class="fa fa-times w3-button w3-topright w3-right"
+        class="fa fa-times w3-button close"
         onclick="close_()"
-        style="position: fixed;"
+        style="position: sticky; position: -webkit-sticky; top: 0;"
       ></span>
-      <h2 class="w3-padding w3-border-bottom" style="font-weight: bold;">
+      <h2 style="font-weight: bold;">
         Subjects
       </h2>
-      <div class="w3-bar-block">
-        <span class="w3-bar-item year">First Year</span>
+      <div class="w3-bar-block w3-border">
+        <span class="w3-bar-item year w3-topbar">First Year</span>
         <a href="#" class="w3-bar-item w3-button btn">ESC101</a>
         <a href="#" class="w3-bar-item w3-button btn">MTH101</a>
         <a href="#" class="w3-bar-item w3-button btn">PHY103</a>
         <a href="#" class="w3-bar-item w3-button btn">MTH102</a>
         <a href="#" class="w3-bar-item w3-button btn">OTHERS</a>
       </div>
-      <div class="w3-bar-block">
-        <span class="w3-bar-item year">Second Year</span>
+      <div class="w3-bar-block w3-border">
+        <span class="w3-bar-item year w3-topbar">Second Year</span>
         <a href="#" class="w3-bar-item w3-button btn">ESC101</a>
         <a href="#" class="w3-bar-item w3-button btn">MTH101</a>
         <a href="#" class="w3-bar-item w3-button btn">PHY103</a>
         <a href="#" class="w3-bar-item w3-button btn">MTH102</a>
         <a href="#" class="w3-bar-item w3-button btn">OTHERS</a>
       </div>
-      <div class="w3-bar-block">
-        <span class="w3-bar-item year">Third Year</span>
+      <div class="w3-bar-block w3-border">
+        <span class="w3-bar-item year w3-topbar">Third Year</span>
         <a href="#" class="w3-bar-item w3-button btn">ESC101</a>
         <a href="#" class="w3-bar-item w3-button btn">MTH101</a>
         <a href="#" class="w3-bar-item w3-button btn">PHY103</a>
         <a href="#" class="w3-bar-item w3-button btn">MTH102</a>
         <a href="#" class="w3-bar-item w3-button btn">OTHERS</a>
       </div>
-      <div class="w3-bar-block">
-        <span class="w3-bar-item year">Fourth Year</span>
+      <div class="w3-bar-block w3-border">
+        <span class="w3-bar-item year w3-topbar">Fourth Year</span>
         <a href="#" class="w3-bar-item w3-button btn">ESC101</a>
         <a href="#" class="w3-bar-item w3-button btn">MTH101</a>
         <a href="#" class="w3-bar-item w3-button btn">PHY103</a>
@@ -62,47 +79,50 @@
       <div class="w3-bar-item w3-button w3-left" id="bars" onclick="open_()">
         <span class="fa fa-bars"></span>
       </div>
-      <a href="#"
-        ><div class="w3-bar-item w3-button menu-cont">
-          <i class="fa fa-home"></i> HOME
-        </div></a
-      >
-      <div class="w3-bar-item w3-button w3-dropdown-hover menu-cont">
-        <i class="fa fa-calendar"></i> YEAR <i class="fa fa-caret-down"></i>
-        <div
-          class="w3-dropdown-content w3-bar-block"
-          style="transform: translateY(8px);"
+      <div class="bar-right">
+        <a href="#"
+          ><div class="w3-bar-item w3-button menu-cont active">
+            <i class="fa fa-home"></i> HOME
+          </div></a
         >
-          <a href="#" class="w3-bar-item w3-button btn"><i>2019</i></a>
-          <a href="#" class="w3-bar-item w3-button btn"><i>2018</i></a>
-          <a href="#" class="w3-bar-item w3-button btn"><i>2017</i></a>
-          <a href="#" class="w3-bar-item w3-button btn"><i>2016</i></a>
-          <a href="#" class="w3-bar-item w3-button btn"><i>2015</i></a>
-          <a href="#" class="w3-bar-item w3-button btn"><i>Other</i></a>
+        <div class="w3-bar-item w3-button w3-dropdown-hover menu-cont">
+          <i class="fa fa-calendar"></i> YEAR <i class="fa fa-caret-down"></i>
+          <div
+            class="w3-dropdown-content w3-bar-block w3-animate-opacity"
+            style="transform: translateY(8px);"
+          >
+            <a href="#" class="w3-bar-item w3-button btn"><i>2019</i></a>
+            <a href="#" class="w3-bar-item w3-button btn"><i>2018</i></a>
+            <a href="#" class="w3-bar-item w3-button btn"><i>2017</i></a>
+            <a href="#" class="w3-bar-item w3-button btn"><i>2016</i></a>
+            <a href="#" class="w3-bar-item w3-button btn"><i>2015</i></a>
+            <a href="#" class="w3-bar-item w3-button btn"><i>Other</i></a>
+          </div>
         </div>
-      </div>
-      <div class="w3-bar-item w3-button w3-dropdown-hover menu-cont">
-        <i class="fa fa-external-link"></i> Other Links
-        <i class="fa fa-caret-down"></i>
-        <div
-          class="w3-dropdown-content w3-bar-block"
-          style="transform: translateY(8px);"
-        >
-          <a href="#" class="w3-bar-item w3-button btn"><i>Link 1</i></a>
-          <a href="#" class="w3-bar-item w3-button btn"><i>Link 2</i></a>
-          <a href="#" class="w3-bar-item w3-button btn"><i>Link 3</i></a>
-          <a href="#" class="w3-bar-item w3-button btn"><i>Link 4</i></a>
-          <a href="#" class="w3-bar-item w3-button btn"><i>Link 5</i></a>
+        <div class="w3-bar-item w3-button w3-dropdown-hover menu-cont">
+          <i class="fa fa-external-link"></i> Other Links
+          <i class="fa fa-caret-down"></i>
+          <div
+            class="w3-dropdown-content w3-bar-block w3-animate-opacity"
+            style="transform: translateY(8px);"
+          >
+            <a href="#" class="w3-bar-item w3-button btn"><i>Link 1</i></a>
+            <a href="#" class="w3-bar-item w3-button btn"><i>Link 2</i></a>
+            <a href="#" class="w3-bar-item w3-button btn"><i>Link 3</i></a>
+            <a href="#" class="w3-bar-item w3-button btn"><i>Link 4</i></a>
+            <a href="#" class="w3-bar-item w3-button btn"><i>Link 5</i></a>
+          </div>
         </div>
       </div>
     </div>
-    <script>
-      function open_() {
-        document.getElementById("sidebar").style.display = "block";
-      }
-      function close_() {
-        document.getElementById("sidebar").style.display = "none";
-      }
-    </script>
+    <div class="w3-container">
+      <div class="quote">
+        <h2>
+          You are what you believe in. You become that which you believe you can
+          become.
+        </h2>
+        <h3><i>-Bhagavat Gita</i></h3>
+      </div>
+    </div>
   </body>
 </html>
