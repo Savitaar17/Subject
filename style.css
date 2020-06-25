@@ -1,16 +1,57 @@
 body {
-  background-color: rgb(2, 180, 180);
+  background: url(/Sunjectnew/white-book-in-white-table-near-yellow-wall-3760323.jpg)
+    center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: monospace;
+  font-variant: small-caps;
 }
 .menu-cont {
-  margin: 0 20px;
+  margin: 0 1%;
 }
-.btn:hover {
+/* .btn:hover {
   text-decoration: underline;
-}
+} */
 #sidebar .year {
   font-weight: bold;
 }
 #bars {
-  margin-right: 25%;
+  margin-right: 30%;
   padding: 12px;
+}
+.close {
+  margin-left: 75%;
+}
+#sidebar a {
+  text-decoration: underline;
+}
+#sidebar h2 {
+  margin-left: 10%;
+}
+@media only screen and (max-width: 730px) {
+  .menu-cont {
+    margin: 0px;
+    float: right;
+  }
+  #bars {
+    float: left;
+    margin: 0px;
+  }
+  .bar-right {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    justify-content: center;
+  }
+  .active {
+    margin-left: 25px;
+  }
+}
+.quote h2 {
+  width: 65%;
+  margin: auto;
+  margin-top: 10%;
+}
+.quote h3 {
+  margin-left: 50%;
 }
